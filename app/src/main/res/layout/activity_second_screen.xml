@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondScreen"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/rl_navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_navbar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_regular"
+            android:padding="15dp"
+            android:text="Second Screen"
+            android:textColor="#000"
+            android:textFontWeight="600"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="28dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:layout_below="@id/rl_navbar"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="28dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textColor="#000"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:layout_weight="400"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textColor="#000"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="18sp"
+            android:textFontWeight="600"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected User Name"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/poppins_regular"
+        android:textFontWeight="600"
+        android:textColor="#000"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_button"
+        android:text="Choose a User"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:textFontWeight="500"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="32dp"/>
+
+</RelativeLayout>

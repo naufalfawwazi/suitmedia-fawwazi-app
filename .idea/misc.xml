@@ -5,8 +5,10 @@
       <map>
         <entry key="..\:/Programming/Android/suitmedia-fawwazi-app/app/src/main/res/drawable/bg_button.xml" value="0.1575" />
         <entry key="..\:/Programming/Android/suitmedia-fawwazi-app/app/src/main/res/drawable/bg_input.xml" value="0.1575" />
-        <entry key="..\:/Programming/Android/suitmedia-fawwazi-app/app/src/main/res/layout/activity_first_screen.xml" value="0.2" />
+        <entry key="..\:/Programming/Android/suitmedia-fawwazi-app/app/src/main/res/drawable/bg_navbar.xml" value="0.1575" />
+        <entry key="..\:/Programming/Android/suitmedia-fawwazi-app/app/src/main/res/layout/activity_first_screen.xml" value="0.10400000000000001" />
         <entry key="..\:/Programming/Android/suitmedia-fawwazi-app/app/src/main/res/layout/activity_main.xml" value="0.2210144927536232" />
+        <entry key="..\:/Programming/Android/suitmedia-fawwazi-app/app/src/main/res/layout/activity_second_screen.xml" value="0.152" />
       </map>
     </option>
   </component>

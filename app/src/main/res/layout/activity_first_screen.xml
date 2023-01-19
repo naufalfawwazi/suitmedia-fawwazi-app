@@ -33,6 +33,7 @@
             android:fontFamily="@font/poppins_regular"
             android:hint="Name"
             android:textSize="16sp"
+            android:textFontWeight="500"
             android:paddingHorizontal="20dp"
             android:textColorHint="#6867775C"
             android:textColor="#000"
@@ -49,6 +50,7 @@
             android:fontFamily="@font/poppins_regular"
             android:hint="Palindrome"
             android:textSize="16sp"
+            android:textFontWeight="500"
             android:paddingHorizontal="20dp"
             android:textColorHint="#6867775C"
             android:textColor="#000"
@@ -74,6 +76,7 @@
             android:background="@drawable/bg_button"
             android:text="Check"
             android:textColor="#fff"
+            android:textFontWeight="500"
             android:textSize="14sp"/>
 
         <Button
@@ -84,6 +87,7 @@
             android:text="Next"
             android:textColor="#fff"
             android:textSize="14sp"
+            android:textFontWeight="500"
             android:layout_marginTop="15dp"/>
 
     </LinearLayout>
