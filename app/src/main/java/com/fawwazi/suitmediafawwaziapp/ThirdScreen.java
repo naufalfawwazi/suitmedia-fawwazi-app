@@ -74,8 +74,6 @@ public class ThirdScreen extends AppCompatActivity {
         adapter.setOnItemClickCallback(new UserAdapter.OnItemClickCallback() {
             @Override
             public void onItemClicked(String name) {
-                Toast.makeText(ThirdScreen.this, name, Toast.LENGTH_SHORT).show();
-
                 SharedPreferences mySharedPreferences = getSharedPreferences("SELECTEDNAME_PREFS", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = mySharedPreferences.edit();
                 editor.putString("SELECTED_NAME", name);
