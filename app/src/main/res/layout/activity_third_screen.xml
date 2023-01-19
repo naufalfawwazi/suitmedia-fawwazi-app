@@ -41,7 +41,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/rl_navbar"
-        tools:listitem="@layout/items_user"/>
-
+        tools:listitem="@layout/items_user" />
 
 </RelativeLayout>

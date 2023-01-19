@@ -18,6 +18,11 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.myViewHolder> {
     ArrayList<UserData> userDataArrayList;
+    private OnItemClickCallback onItemClickCallback;
+
+    public void setOnItemClickCallback(OnItemClickCallback onItemClickCallback) {
+        this.onItemClickCallback = onItemClickCallback;
+    }
 
     public UserAdapter(ArrayList<UserData> userDataArrayList) {
         this.userDataArrayList = userDataArrayList;
@@ -45,6 +50,13 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.myViewHolder> 
                         .diskCacheStrategy(DiskCacheStrategy.DATA))
                 .into(holder.ivAvatar);
 
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onItemClickCallback.onItemClicked(user.getFirst_name() + " " + user.getLast_name());
+            }
+        });
+
     }
 
     @Override
@@ -64,5 +76,9 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.myViewHolder> 
             tvEmail = itemView.findViewById(R.id.tv_email);
             ivAvatar = itemView.findViewById(R.id.iv_avatar);
         }
+    }
+
+    public interface OnItemClickCallback {
+        void onItemClicked(String name);
     }
 }

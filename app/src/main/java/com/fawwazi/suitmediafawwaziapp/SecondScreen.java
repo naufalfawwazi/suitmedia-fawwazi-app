@@ -2,12 +2,17 @@ package com.fawwazi.suitmediafawwaziapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class SecondScreen extends AppCompatActivity implements View.OnClickListener {
     private TextView tvName, tvSelectedName;
@@ -27,6 +32,17 @@ public class SecondScreen extends AppCompatActivity implements View.OnClickListe
         tvName.setText(getIntent().getStringExtra("NAME"));
         btnChoose.setOnClickListener(this);
         ivBack.setOnClickListener(this);
+
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+
+        SharedPreferences mySharedPreferences = this.getSharedPreferences("SELECTEDNAME_PREFS", Context.MODE_PRIVATE);
+        String selected_name = mySharedPreferences.getString("SELECTED_NAME", "gada");
+
+        tvSelectedName.setText(selected_name);
     }
 
     @Override
