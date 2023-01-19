@@ -14,6 +14,9 @@
         android:theme="@style/Theme.SuitmediaFawwaziApp"
         tools:targetApi="31">
         <activity
+            android:name=".ThirdScreen"
+            android:exported="false" />
+        <activity
             android:name=".SecondScreen"
             android:exported="false" />
         <activity

@@ -26,6 +26,7 @@
             android:textSize="18sp" />
 
         <ImageView
+            android:id="@+id/iv_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_back"
@@ -54,6 +55,7 @@
             android:layout_weight="400"/>
 
         <TextView
+            android:id="@+id/tv_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="John Doe"
@@ -65,6 +67,7 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/tv_selectedname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Selected User Name"
@@ -75,7 +78,7 @@
         android:textSize="24sp"/>
 
     <Button
-        android:id="@+id/btn_next"
+        android:id="@+id/btn_choose"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@drawable/bg_button"
