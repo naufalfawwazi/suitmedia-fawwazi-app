@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstScreen"
+    android:background="@drawable/background">
+
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="116dp"
+        android:layout_height="116dp"
+        android:src="@drawable/ic_photo"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/ll_edittexts"
+        android:layout_marginBottom="58dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_edittexts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="33dp">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_input"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Name"
+            android:textSize="16sp"
+            android:paddingHorizontal="20dp"
+            android:textColorHint="#6867775C"
+            android:textColor="#000"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/et_palindrome"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_input"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Palindrome"
+            android:textSize="16sp"
+            android:paddingHorizontal="20dp"
+            android:textColorHint="#6867775C"
+            android:textColor="#000"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="33dp"
+        android:layout_below="@id/ll_edittexts"
+        android:layout_marginTop="45dp">
+
+        <Button
+            android:id="@+id/btn_check"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_button"
+            android:text="Check"
+            android:textColor="#fff"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_button"
+            android:text="Next"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
