@@ -4,7 +4,9 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -54,6 +56,11 @@ public class FirstScreen extends AppCompatActivity implements View.OnClickListen
                 Toast.makeText(this, "Please fill the Name form above...", Toast.LENGTH_SHORT).show();
                 return;
             }
+
+            SharedPreferences mySharedPreferences = getSharedPreferences("SELECTEDNAME_PREFS", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = mySharedPreferences.edit();
+            editor.putString("SELECTED_NAME", "Selected User Name");
+            editor.apply();
 
             Intent i = new Intent(this, SecondScreen.class);
             i.putExtra("NAME", etName.getText().toString().trim());

@@ -40,7 +40,7 @@ public class SecondScreen extends AppCompatActivity implements View.OnClickListe
         super.onRestart();
 
         SharedPreferences mySharedPreferences = this.getSharedPreferences("SELECTEDNAME_PREFS", Context.MODE_PRIVATE);
-        String selected_name = mySharedPreferences.getString("SELECTED_NAME", "gada");
+        String selected_name = mySharedPreferences.getString("SELECTED_NAME", "Selected User Name");
 
         tvSelectedName.setText(selected_name);
     }
